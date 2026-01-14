@@ -2,26 +2,16 @@ PATH
   remote: .
   specs:
     bubbletea (0.1.0)
+      charm-native (~> 0.1)
       lipgloss (~> 0.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.3)
+    charm-native (0.1.0)
     date (3.5.1)
     erb (6.0.1)
-    glamour (0.2.1)
-    glamour (0.2.1-aarch64-linux-gnu)
-    glamour (0.2.1-aarch64-linux-musl)
-    glamour (0.2.1-arm-linux-gnu)
-    glamour (0.2.1-arm-linux-musl)
-    glamour (0.2.1-arm64-darwin)
-    glamour (0.2.1-x86-linux-gnu)
-    glamour (0.2.1-x86-linux-musl)
-    glamour (0.2.1-x86_64-darwin)
-    glamour (0.2.1-x86_64-linux-gnu)
-    glamour (0.2.1-x86_64-linux-musl)
-    harmonica (0.1.0)
     io-console (0.8.2)
     irb (1.16.0)
       pp (>= 0.6.0)
@@ -107,10 +97,7 @@ PLATFORMS
 
 DEPENDENCIES
   bubbletea!
-  glamour
-  harmonica
   irb
-  lipgloss
   logger
   maxitest (~> 7.0)
   rake (~> 13.0)

@@ -24,16 +24,13 @@ Gem::Specification.new do |spec|
     "LICENSE.txt",
     "README.md",
     "CHANGELOG.md",
-    "lib/**/*.rb",
-    "ext/**/*.{c,h,rb}",
-    "go/**/*.{go,mod,sum}",
-    "go/build/**/*"
+    "lib/**/*.rb"
   ]
 
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.extensions = ["ext/bubbletea/extconf.rb"]
 
+  spec.add_dependency "charm-native", "~> 0.1"
   spec.add_dependency "lipgloss", "~> 0.1"
 end
